@@ -1,0 +1,40 @@
+.footer {
+  background-color: rgb(39, 39, 39);
+  padding: 30px 0;
+  font-size: 32px;
+  color: #fff;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  a {
+    // color: var(--link-color);
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 26px;
+  }
+
+  @include tablet {
+    padding: 10px;
+  }
+}
+
+.footer__copyright {
+  padding: 10px 0;
+  font-size: 16px;
+
+  a {
+    text-decoration: none;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+}

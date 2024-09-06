@@ -1,0 +1,55 @@
+#nav {
+  background-color: var(--main-bg-color);
+  padding: 15px 0;
+  font-size: 1.5rem;
+}
+
+.header__row {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // column-gap: 30px;
+  // row-gap: 20px;
+
+  .mobile-nav-btn {
+    margin-right: 30px;
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+}
+
+.nav__list {
+  display: flex;
+  color: #fff;
+  gap: 50px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.project-tile {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

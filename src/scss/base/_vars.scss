@@ -1,0 +1,22 @@
+:root {
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  --font-main: "Forum", serif;
+  --font-accent: "Merriweather", serif;
+  --font-titles: var(--font-accent);
+  --font-logo: "Poppins", sans-serif;
+
+  --main-bg-color: #be3144;
+  --grey-color: #313841;
+  --dark-blue: #45567d;
+
+  --laptop-size: 1199px;
+  --tablet-size: 726px;
+  --mobile-size: 425px;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

@@ -1,0 +1,79 @@
+#main-skills {
+  padding: 80px 100px 100px;
+
+  @include tablet {
+    padding: 40px 60px 60px;
+  }
+}
+
+.all-circle {
+  display: flex;
+  justify-content: center;
+
+  gap: 80px;
+  height: 100%;
+
+  padding: 20px 0;
+
+  @include tablet {
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.pie-chart {
+  // height: 200px;
+}
+
+.pie-chart__title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.circle-chart {
+  width: 200px;
+  height: auto;
+  // height: 100%;
+
+  @include tablet {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+.circle-chart__subline {
+  margin: 5px;
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 31em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

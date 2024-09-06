@@ -1,0 +1,29 @@
+.icons-wrapper {
+  padding: 30px 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  width: 60px;
+  height: 60px;
+}
+
+.icon--woman {
+  fill: var(--main-bg-color);
+}
+
+.icon--questionnaire {
+  fill: var(--main-bg-color);
+}
+
+.icon--diploma {
+  fill: var(--main-bg-color);
+}
+
+.icon--certificate {
+  fill: var(--main-bg-color);
+  width: 22px;
+}
